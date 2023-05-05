@@ -1,0 +1,126 @@
+*{
+    margin: 0%;
+    padding: 0%
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.mobile {
+    display: block;
+    width: 100%;
+    background: rgb(255, 166, 0);
+    line-height: 1.6em;
+    font-weight: 400px;
+    text-align: center;
+    position: relative;
+    margin: 0%;  
+}
+.mobile ul{
+    list-style-type: none ;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+    width: 100;
+    position: relative;
+    background: rgb(171, 179, 107);
+}
+.mobile li{
+    display: inline-block;
+}
+.mobile li a{
+    display: block;
+    min-width: 140px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(194, 176, 216);
+    text-transform: uppercase;
+    background-color: rgb(91, 88, 104);
+    text-decoration: none;
+    margin: -5px;
+    padding: 10% 0;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+
+}
+.mobile-menu li :hover a{
+    color: aliceblue;
+    background-color: black;
+    transition: 1s;
+
+}
+.mobile-menu li :hover ul a{
+    background-color: rgb(145, 133, 156);
+    color: darkgoldenrod;
+    height: 40px;
+    line-height: 40px;
+}
+.mobile-menu li :hover .mobile-menu ul a :hover{
+    color: black;
+
+}
+.mobile-menu li ul{
+    display: none;
+}
+.mobile-menu li ul li{
+    display: block;
+    float: none;
+}
+.mobile-menu li ul li a{
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+.mobile-menu .show-menu{
+    text-decoration: none;
+    color: coral;
+    text-align: center;
+    padding: 10px 15px;
+    display: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.mobile-menu .show-menu span{
+    padding-left: 25px;
+
+}
+.mobile-menu input[type=checkbox]{
+    display: none;
+
+
+}
+.mobile-menu[type=checkbox]:checked ~ #menu{
+    display: block;
+    
+}
+@media screen and (max-width:800px){
+    .mobile line{
+        border-bottom: 15px double white;
+        border-top: 5px solid white;
+        content: "";
+        height: 5px;
+        width: 20px;
+        padding-right: 15px; 
+        float: right;
+
+    }
+    .mobile-menu ul{
+        position: static;
+        display: none;
+
+    }
+    .mobile-menu li{
+        margin-bottom: 1px;
+
+    }
+    .mobile-menu ul li, .mobile-menu li a{
+        width: 100%;
+
+    }
+    .mobile-menu .show-menu{
+        display: block;
+    }
+}
